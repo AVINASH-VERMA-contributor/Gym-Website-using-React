@@ -1,0 +1,142 @@
+body {
+    font-family: 'Josefin Sans';
+    background-color: #FFFAFB;
+  }
+  
+  * {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  
+  }
+  
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+  
+  .right-arrow,
+  .left-arrow {
+  cursor:pointer;
+  }
+  
+  .right-arrow {
+    right: 140px;
+  }
+  
+  .right-arrow:hover,
+  .left-arrow:hover {
+    transform: scale(1.3, 1.3);
+  }
+  
+  .react-horizontal-scrolling-menu--wrapper {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .detail-image {
+    width: 700px;
+    height: 700px;
+  }
+  
+  .hero-banner-img {
+    position: absolute;
+    right: 40px;
+    width: 700px;
+    height: 900px;
+    top:0px;
+  }
+  
+  .exercise-card {
+    width: 300px;
+    height: 500px;
+    background: #fff;
+    border-top: 4px solid #FF2625;
+    border-bottom-left-radius: 20px;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding-bottom: 10px;
+    transform: scale(1, 1);
+    margin-bottom: 20px;
+
+    transition: 0.3s all ease-in-out;
+  }
+  
+  .exercise-button:hover{
+color:#000;
+  }
+
+  .exercise-card img {
+    height: 326px;
+  }
+  
+  .bodyPart-card {
+    transform: scale(1, 1);
+    transition: 0.3s all ease-in-out;
+
+  }
+  
+  
+  .bodyPart-card:hover {
+    transform: scale(1.1, 1.1);
+    border-top: 15px solid #FF2625;
+  }
+
+  .exercise-card:hover{
+    transform: scale(1.1, 1.1);
+    border-top: 2px solid #FF2625;
+  }
+  
+  .search-btn:hover {
+    color: #FF2625 !important;
+    border: 1px solid #FF2625 !important;
+  }
+  
+  .exercise-video {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 347px;
+    height: 341px;
+    text-decoration: none;
+    
+  }
+  
+  @media screen and (max-width:1200px) {
+    .detail-image {
+      width: 300px;
+      height: 300px;
+    }
+  
+  
+    .react-horizontal-scrolling-menu--scroll-container {
+      width: 500px;
+    }
+  
+    .left-arrow,
+    .right-arrow {
+      position: static !important;
+    }
+  
+    .hero-banner-img {
+      display: none;
+    }
+  
+    .exercise-card {
+      width: 320px;
+    }
+  
+    .exercise-video {
+      width: 320px;
+      height: 300px;
+    }
+  
+  }
+  
+  @media screen and (max-width:400px) {
+    .exercise-card {
+      width: 280px;
+    }
+  }
